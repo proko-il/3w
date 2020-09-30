@@ -1,0 +1,55 @@
+
+
+.top{
+	width: 1000px;
+	height:auto;}
+
+.proko{
+	position: absolute;
+	left: 50%;
+    transform: translate(-50%, 0);
+	text-align:center;
+	white-space: nowrap;}
+
+.box{
+	width: 36px;
+	height:36px;
+	background-color: black;
+	transition-property: all;
+	transition-duration: 0.2s;
+	display:inline-block;
+	margin-right: -4px;
+	margin-bottom: -4px;
+    
+
+	animation: opacitytozero;
+	animation-duration: 0.2s;
+	animation-play-state: paused;
+	animation-fill-mode: forwards;}
+
+.box:hover{
+	background-color: #ff04cd;
+	transform: rotate(180deg);
+	animation-play-state: running;}
+
+.img{
+	position: absolute;
+	left: 50%;
+    transform: translate(-50%, 0); }
+
+
+@keyframes opacitytozero{
+	0%{
+		opacity: 1
+	}
+	100%{
+		opacity: 0
+	}
+}
+
+body{
+	background-color: black;}
+
+img{
+	width: 700px;}
+
